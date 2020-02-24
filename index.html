@@ -2,27 +2,9 @@
 <head>
     <meta charset="utf-8">
     <title>跳转中...</title>
-    <script>
-        function redirectCdqz() {
-            document.location = "http://www.cdqz.net";
-        }
-        function redirectCdss() {
-            document.location = "http://www.cdshishi.net";
-        }
-    </script>
 </head>
 <body>
-    <p id="para1"></p>
-    <p id="url"></p>
     <script>
-        var str = document.referrer;
-        document.getElementById("url").innerHTML = "previous page: " + str;
-        if (str.indexOf("ncc79601") == -1) {
-            document.getElementById("para1").innerHTML = "jumping to cdss...";
-            redirectCdss();
-        } else {
-            document.getElementById("para1").innerHTML = "jumping to cdqz...";
-            redirectCdqz();
-        }
+        document.location = "http://www.cdqz.net";
     </script>
 </body>
